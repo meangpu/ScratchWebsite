@@ -1,65 +1,101 @@
+/* Reset default styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Set the background color */
 body {
-  font-family: "Kanit", sans-serif;
-  background-color: #333333;
-  color: #ffffff;
-  line-height: 1.5;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Add styles to the header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+header nav {
+  margin-bottom: 1rem;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li {
+header nav ul li {
   margin-right: 1rem;
 }
 
-nav ul li a {
-  color: #ffffff;
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-#herosection {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header p {
+  font-size: 1.2rem;
   text-align: center;
 }
 
-#herosection h1 {
-  font-size: 4rem;
+/* Add styles to the hero section */
+#hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-#herosection p {
-  font-size: 1.5rem;
+#hero p {
+  font-size: 1.2rem;
 }
 
-section {
-  margin-bottom: 1rem;
+/* Add styles to the project section */
+#projects {
+  padding: 3rem 1rem;
 }
 
-section h2 {
-  font-size: 2rem;
+#projects h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add styles to the footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+}
+
+footer p {
+  font-size: 1.2rem;
 }
