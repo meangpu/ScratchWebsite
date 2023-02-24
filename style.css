@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Set the font */
+body {
+  font-family: "Kanit", sans-serif;
+}
+
 /* Set the background color */
 body {
   background-color: #1a1a1a;
@@ -48,6 +53,17 @@ header p {
   font-size: 1.2rem;
   text-align: center;
 }
+section {
+  width: 60vw;
+  margin: 2vh auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+  text-align: center;
+}
 
 /* Add styles to the hero section */
 #hero {
@@ -55,27 +71,37 @@ header p {
   text-align: center;
 }
 
-#hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 #hero p {
   font-size: 1.2rem;
 }
 
-/* Add styles to the project section */
+/* Add styles to the projects section */
 #projects {
   padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#projects h2 {
-  font-size: 2.5rem;
+.project {
+  width: calc(100% / 3 - 1rem);
+
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  text-align: center;
+}
+
+.project:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .iframe-container {
+  border-radius: 2rem;
   position: relative;
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 aspect ratio */
@@ -98,4 +124,43 @@ footer {
 
 footer p {
   font-size: 1.2rem;
+}
+
+/* Responsive styles */
+
+/* For phones */
+@media screen and (max-width: 576px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #projects .project {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* For iPads */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #projects .project {
+    width: calc(50% - 0.5rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #projects .project:nth-child(2n) {
+    margin-right: 0;
+  }
 }
