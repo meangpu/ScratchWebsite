@@ -3,48 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Background Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <title>meangpu Scratch Games</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Dark Background Website</h1>
-      <p>A website with a hero section and multiple projects</p>
+      <div class="hero-content">
+        <h1>คลังเกมของณัฐพงศ์</h1>
+        <p>
+          เป็นเว็ปไซต์ที่สร้างขึ้นมาเพื่อแสดงผลงานเกม Scratch ที่ผ่านมาของ นาย
+          ณัฐพงศ์ ตั้งเสถียรภาพ
+        </p>
+        <br />
+        <br />
+        <a href="#projectSection" class="cta">ดูโปรเจคที่เคยทำ</a>
+      </div>
     </header>
 
-    <section id="hero">
-      <h2>Hero Section</h2>
-      <p>This is the hero section of the website</p>
-    </section>
-
     <section>
-      <h2>Projects</h2>
-    </section>
+      <h2 id="projectSection">โปรเจค</h2>
 
-    <section id="projects">
-      <div class="project">
-        <h3>Project 1</h3>
-        <div class="iframe-container">
-          <iframe src="https://www.example.com/project1"></iframe>
-        </div>
-      </div>
-      <div class="project">
-        <h3>Project 1</h3>
-        <div class="iframe-container">
-          <iframe src="https://www.example.com/project1"></iframe>
+      <div class="project-container">
+        <div class="project">
+          <h3>โปรแกรมวาดรูปหลายเหลี่ยม</h3>
+          <iframe
+            src="https://scratch.mit.edu/projects/370298311/embed"
+            allowtransparency="true"
+            height="560"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2023 Dark Background Website</p>
+      <p>&copy; nattapong 2023</p>
     </footer>
   </body>
 </html>

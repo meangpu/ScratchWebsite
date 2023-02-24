@@ -1,98 +1,103 @@
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Set the font */
 body {
   font-family: "Kanit", sans-serif;
-}
-
-/* Set the background color */
-body {
   background-color: #1a1a1a;
   color: #fff;
 }
 
-/* Add styles to the header */
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
 }
 
-header nav {
-  margin-bottom: 1rem;
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-}
-
-header nav ul li {
-  margin-right: 1rem;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-header h1 {
+h1 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-header p {
-  font-size: 1.2rem;
-  text-align: center;
-}
-section {
-  width: 60vw;
-  margin: 2vh auto;
-}
-
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-
   text-align: center;
 }
 
-/* Add styles to the hero section */
-#hero {
-  padding: 3rem 1rem;
+p {
+  font-size: 1.2rem;
   text-align: center;
+  color: #ffffffb7;
+}
+
+section {
+  width: 85vw;
+  margin: 2vh auto;
+}
+
+.hero-content {
+  background-image: url("img/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem; /* increase padding to make section larger */
+  text-align: center;
+  width: 100%; /* set width to 100% */
+}
+
+#hero h2 {
+  margin-top: 0;
 }
 
 #hero p {
   font-size: 1.2rem;
 }
 
-/* Add styles to the projects section */
-#projects {
-  padding: 3rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.cta {
+  font-size: 1.6rem;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.project-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-gap: 1rem;
 }
 
 .project {
-  width: calc(100% / 3 - 1rem);
-
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #0000006b;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-.project:nth-child(3n) {
-  margin-right: 0;
+.project h3 {
+  font-size: 1.5rem;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .project h3 {
@@ -100,22 +105,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.iframe-container {
-  border-radius: 2rem;
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-}
-
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Add styles to the footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -126,8 +115,6 @@ footer p {
   font-size: 1.2rem;
 }
 
-/* Responsive styles */
-
 /* For phones */
 @media screen and (max-width: 576px) {
   header h1 {
@@ -136,11 +123,6 @@ footer p {
 
   header p {
     font-size: 1rem;
-  }
-
-  #projects .project {
-    width: 100%;
-    margin-right: 0;
   }
 }
 
@@ -152,15 +134,5 @@ footer p {
 
   header p {
     font-size: 1rem;
-  }
-
-  #projects .project {
-    width: calc(50% - 0.5rem);
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  #projects .project:nth-child(2n) {
-    margin-right: 0;
   }
 }
